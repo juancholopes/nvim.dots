@@ -143,7 +143,7 @@ yellow = '#e6b99d'
 blue = '#85b5ba'
 magenta = '#92a2d5'
 cyan = "#85B5BA"
-white = '#c9c7cd'
+white = '#90b99F'
 
 [cursor]
 style = "Block"

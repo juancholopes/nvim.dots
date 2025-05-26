@@ -21,18 +21,19 @@
       pkgs = import nixpkgs { inherit system; };  # Import nixpkgs for the specified system
     in {
       homeConfigurations = {
-        "gentleman" =
+        "juancho" =
           home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
             modules = [
               ./nushell.nix  # Nushell configuration
               ./ghostty.nix  # Ghostty configuration
               ./wezterm.nix  # WezTerm configuration
-              # ./zellij.nix  # Zellij configuration (commented out)
+              ./zellij.nix  # Zellij configuration 
               ./fish.nix  # Fish shell configuration
               ./starship.nix  # Starship prompt configuration
               ./nvim.nix  # Neovim configuration
-              ./zsh.nix  # Zsh configuration
+              ./alacritty.nix # Alacritty configuration
+              # ./zsh.nix  # Zsh configuration
               {
                 # Personal data
                 home.username = "juancho";  # Replace with your username

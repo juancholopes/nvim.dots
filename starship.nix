@@ -14,7 +14,6 @@ $git_branch\
 $git_status\
 [](fg:color_aqua bg:color_blue)\
 $c\
-$cpp\
 $rust\
 $golang\
 $nodejs\
@@ -107,11 +106,6 @@ symbol = " "
 style = "bg:color_blue"
 format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 
-[cpp]
-symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
-
 [rust]
 symbol = ""
 style = "bg:color_blue"
@@ -155,10 +149,6 @@ format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 [conda]
 style = "bg:color_bg3"
 format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg3)]($style)'
-
-[pixi]
-style = "bg:color_bg3"
-format = '[[ $symbol( $version)( $environment) ](fg:color_fg0 bg:color_bg3)]($style)'
 
 [time]
 disabled = false

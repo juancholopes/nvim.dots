@@ -10,7 +10,6 @@
     zplug = {
       enable = true;
       plugins = [
-        { name = "zsh-users/zsh-autosuggestions"; }
         { name = "zsh-users/zsh-syntax-highlighting"; }
         { name = "marlonrichert/zsh-autocomplete"; }
         { name = "jeffreytse/zsh-vi-mode"; }
@@ -87,7 +86,7 @@
       if [[ "$(uname)" == "Darwin" ]]; then
         alias ls='ls --color=auto'
       else
-        alias ls='gls --color=auto'
+        alias ls='ls --color=auto'
       fi
     '';
   };

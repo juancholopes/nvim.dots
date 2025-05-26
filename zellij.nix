@@ -394,7 +394,7 @@ themes {
 
     oldWorld {
       fg "#C9C7CD"
-      bg "#000000"
+      bg "#161617"
       red "#EA83A5"
       green "#90B99F"
       yellow "#E6B99D"
@@ -406,7 +406,7 @@ themes {
       white "#C9C7CD"
     }
 }
-theme "catppuccin-mocha"
+theme "oldWorld"
 default_mode "locked"
 scrollback_editor "nvim"
 default_layout "work_oldWorld"

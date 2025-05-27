@@ -997,3 +997,9 @@ def fzfnvim [] {
 if "ZELLIJ" not-in ($env | columns) {
    run-external zellij
  } 
+
+
+-- Alias para editores instalados con Flatpak
+
+alias zed = 'flatpak run dev.zed.Zed'
+alias code = 'flatpak run com.visualstudio.code'

@@ -9,69 +9,70 @@ local wezterm = require("wezterm")
 -- Initialize an empty configuration table
 local config = {}
 
--- OldWorld Theme
--- config.colors = {
---foreground = "--C9C7CD",
---background = "--000000",
---
---cursor_bg = "--92A2D5",
---cursor_fg = "--C9C7CD",
---cursor_border = "--92A2D5",
---
---selection_fg = "--C9C7CD",
---selection_bg = "--3B4252",
---
---scrollbar_thumb = "--4C566A",
---split = "--4C566A",
---
---ansi = {
---	"--000000",
---	"--EA83A5",
---	"--90B99F",
---	"--E6B99D",
---	"--85B5BA",
---	"--92A2D5",
---	"--85B5BA",
---	"--C9C7CD",
---},
---
---brights = {
---	"--4C566A",
---	"--EA83A5",
---	"--90B99F",
---	"--E6B99D",
---	"--85B5BA",
---	"--92A2D5",
---	"--85B5BA",
---	"--C9C7CD",
---},
---
---indexed = {
---	[16] = "--F5A191",
---	[17] = "--E29ECA",
- 	},
- }
-config.color_scheme = 'Kanagawa (Gogh)'
+-- Background image options
+-- config.background = {
+-- 	{
+-- 		source = {
+-- 			File = "C:/Users/alanb/Pictures/synth-kanagawa-blur-20.jpg", -- Path to the background image file
+-- 		},
+-- 		width = "100%", -- Set the background image width to 100% of the terminal window
+-- 		height = "100%", -- Set the background image height to gg100% of the terminal window
+-- 		opacity = 1, -- Set the opacity of the background image (0.0 - 1.0)
+-- 		hsb = {
+-- 			brightness = 0.04, -- Set the brightness of the background image (low value to darken the image)
+-- 			saturation = 1, -- Set the saturation of the background image
+-- 		},
+-- 	},
+-- }
+
+config.color_scheme = "Kanagawa (Gogh)"
+-- This is where you actually apply your config choices
 config.window_padding = {
 	top = 0,
 	right = 0,
 	left = 0,
 }
 
+-- Set the terminal font
 config.font = wezterm.font("IosevkaTerm NF")
+
+-- Hide the tab bar if only one tab is open
 config.hide_tab_bar_if_only_one_tab = true
-config.max_fps = 240
+config.max_fps = 240 -- hack for smoothness
 config.enable_kitty_graphics = true
 
-config.window_background_opacity = 0.85
-config.macos_window_background_blur = 20
-config.win32_system_backdrop = "Acrylic"
+-- Background with Transparency
+config.window_background_opacity = 0.85 -- Adjust this value as needed
+config.macos_window_background_blur = 20 -- Adjust this value as needed
+config.win32_system_backdrop = "Acrylic" -- Only Works in Windows
 
+-- Font Size
 config.font_size = 16.0
+
+-- Smooth hack
+config.max_fps = 240
+
+-- Enable Kitty Graphics
+config.enable_kitty_graphics = true
+
+-- Disable Scroll Bar
 config.enable_scroll_bar = false
 
-return config
-       '';
+-- activate ONLY if windows --
+
+-- config.default_domain = 'WSL:Ubuntu'
+-- config.front_end = "OpenGL"
+-- local gpus = wezterm.gui.enumerate_gpus()
+-- if #gpus > 0 then
+--   config.webgpu_preferred_adapter = gpus[1] -- only set if there's at least one GPU
+-- else
+--   -- fallback to default behavior or log a message
+--   wezterm.log_info("No GPUs found, using default settings")
+-- end
+
+-- and finally, return the configuration to wezterm
+
+return config       '';
      };
    };
  }

@@ -33,7 +33,7 @@
               ./starship.nix  # Starship prompt configuration
               ./nvim.nix  # Neovim configuration
               ./alacritty.nix # Alacritty configuration
-              # ./zsh.nix  # Zsh configuration
+              ./zsh.nix  # Zsh configuration
               {
                 # Personal data
                 home.username = "juancho";  # Replace with your username

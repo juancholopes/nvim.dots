@@ -26,6 +26,7 @@
             inherit pkgs;
             modules = [
               ./nushell.nix  # Nushell configuration
+              ./zed.nix  # Zed configuration
               ./ghostty.nix  # Ghostty configuration
               ./wezterm.nix  # WezTerm configuration
               ./zellij.nix  # Zellij configuration 

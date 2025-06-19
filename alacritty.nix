@@ -161,6 +161,7 @@ lines = 30
 
 [window]
 option_as_alt = "Both"
+decorations_theme_variant = "dark"
 
 [env]
 TERM = "xterm-256color"

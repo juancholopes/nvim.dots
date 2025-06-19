@@ -160,8 +160,7 @@ columns = 130
 lines = 30
 
 [window]
-option_as_alt = "Both"
-decorations_theme_variant = "dark"
+decorations_theme_variant = "Dark"
 
 [env]
 TERM = "xterm-256color"

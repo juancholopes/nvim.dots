@@ -76,6 +76,16 @@ Modify `home.homeDirectory` accordingly:
 nix run github:nix-community/home-manager -- switch --flake .#juancho -b backup
 ```
 
+## Fix Clipboard issues in Arch Linux
+
+In Arch Linux you may not have the clipboard if you use X11 to solve this you must install the clipboard
+
+code
+
+```bash
+sudo pacman -S xclip
+```
+
 ## Shells Suported
 
 - Fish

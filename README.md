@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Neovim + Nix</h1>
+  <h1>Neovim + Nix 🚀</h1>
 </div>
 
 ![preview](./assets/preview.png)

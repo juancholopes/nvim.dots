@@ -88,6 +88,7 @@
       else
         alias ls='ls --color=auto'
       fi
+      zsh
     '';
   };
 }
